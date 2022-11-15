@@ -47,22 +47,8 @@ years = [row["YEAR"] for row in AVG_MATH_4_SCORE]
 print(years)
 
 # Percent Change
-"""Creating the percent change
-
-    Parameters
 
     
-    ----------
-    x : type
-        Description of parameter `x`.
-    y
-        Description of parameter `y` (with type not specified).
-
-    Returns
-    -------
-    int
-        percent_change: The calculated change in our percent
-    """
 def percent_change(list_data, year1, year2, column):
     old_value = 0
     new_value = 0
@@ -83,20 +69,7 @@ def percent_change(list_data, year1, year2, column):
 print(percent_change(list_data, "2009", "2011", "AVG_MATH_4_SCORE"))
 
 # Applying the percent change 
-"""Applying the percent change
 
-    Parameters
-    ----------
-    x : type
-        Description of parameter `x`.
-    y
-        Description of parameter `y` (with type not specified).
-
-    Returns
-    -------
-    int
-        Description of anonymous integer return value.
-    """
 for i in range(len(years)):
     if i + 1 >= len(years):
         break
