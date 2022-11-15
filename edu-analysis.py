@@ -50,6 +50,24 @@ print(years)
 
     
 def percent_change(list_data, year1, year2, column):
+    """Calculates percent change
+
+    Parameters
+    ----------
+    list_data : list of dictionaries
+        Education data throughout the US
+    y1 : str
+        Initial year that's being compared
+    y2: str
+        Secondary year value
+    column : str
+        Column describing actual year scores
+
+    Returns
+    -------
+    Float
+       returning percent_change.
+    """
     old_value = 0
     new_value = 0
     for row in list_data:
